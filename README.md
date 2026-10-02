@@ -109,3 +109,14 @@ O código utiliza estruturas condicionais `if` para controlar os fluxos de execu
 <div>
   <img src='./mermaid-diagram (7).png'>
 <div/>
+
+## 5. Erros
+
+| Teste | Entrada | Resultado Esperado | Resultado Obtido | Situação |
+|---|---|---|---|---|
+| CT01 | Mouse, 0, sem cupom, normal | Quantidade inválida | "Pedido calculado com sucesso", total R$ 30,00 |
+| CT02 | Teclado, 10, sem cupom, retirada | Aceito, total R$ 1.425,00 | "Quantidade indisponível em estoque" |
+| CT03 | Mouse, 5, sem cupom, retirada | Total R$ 380,00 | Total R$ 400,00, sem desconto | Falhou |
+| CT04 | Mouse, 10, SENAI10, retirada | Desconto R$ 120,00, total R$ 680,00 | Desconto R$ 80,00, total R$ 680,00 |
+| CT05 | Notebook, 1, sem cupom, retirada | Total R$ 2.850,00 e alto valor | Total R$ 3.000,00 e "alto valor" |
+| CT06 | Notebook, 1, sem cupom, expresso | Alto valor, total R$ 2.907,00 | "Pedido calculado com sucesso", total R$ 2.907,00 |
