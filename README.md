@@ -61,19 +61,55 @@ O código utiliza estruturas condicionais `if` para controlar os fluxos de execu
 
 ## 4. Fluxogramas do Sistema
 
+<div>
+  <img src='./mermaid-diagram.png'>
+<div/>
+
 ### 4.1 Fluxograma geral
+
+<div>
+  <img src='./mermaid-diagram (1).png'>
+<div/>
+
 
 ### 4.2 Fluxograma — Cálculo do desconto
 
+<div>
+  <img src='./mermaid-diagram (2).png'>
+<div/>
+
 ### 4.3 Fluxograma — Desconto por quantidade
+
+<div>
+  <img src='./mermaid-diagram (3).png'>
+<div/>
 
 ### 4.4 Fluxograma — Cálculo do frete
 
+<div>
+  <img src='./mermaid-diagram (4).png'>
+<div/>
+
 ### 4.5 Fluxograma — Validação da quantidade
+
+<div>
+  <img src='./mermaid-diagram (5).png'>
+<div/>
 
 ### 4.6 Fluxograma — Cálculo do total
 
+<div>
+  <img src='./mermaid-diagram (6).png'>
+<div/>
+
 ### 4.7 Fluxograma — Pedido de alto valor
+
+<div>
+  <img src='./mermaid-diagram (7).png'>
+<div/>
 
 ### 4.8 Fluxograma — Fluxo completo de execução
 
+<div>
+  <img src='./mermaid-diagram (8).png'>
+<div/>
