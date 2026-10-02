@@ -120,3 +120,16 @@ O código utiliza estruturas condicionais `if` para controlar os fluxos de execu
 | CT04 | Mouse, 10, SENAI10, retirada | Desconto R$ 120,00, total R$ 680,00 | Desconto R$ 80,00, total R$ 680,00 |
 | CT05 | Notebook, 1, sem cupom, retirada | Total R$ 2.850,00 e alto valor | Total R$ 3.000,00 e "alto valor" |
 | CT06 | Notebook, 1, sem cupom, expresso | Alto valor, total R$ 2.907,00 | "Pedido calculado com sucesso", total R$ 2.907,00 |
+
+1. **Quantidade = 0:** O pedido com quantidade igual a 0 ainda funciona quando há frete.
+
+2. **Estoque insuficiente:** Quando o produto possui apenas 10 unidades em estoque, não deveria ser possível realizar uma compra com quantidade superior ao estoque disponível.
+
+3. **Desconto por quantidade:** O desconto de **0,05%** deveria ser aplicado quando a quantidade for **maior ou igual a 5 unidades**.
+
+4. **Soma dos descontos:** O sistema deveria somar o desconto por quantidade com o desconto do cupom e exibir ao usuário o **desconto total correto**. Atualmente, está sendo exibido apenas o desconto referente ao cupom.
+
+5. **Pedido de alto valor:** Quando o valor do pedido é exatamente **R$ 3.000,00**, o sistema informa que se trata de um pedido de alto valor, porém não aplica o desconto correspondente. A regra deveria considerar **pedido de alto valor > R$ 3.000,00**.
+
+6. **Frete e pedido de alto valor:** Quando o frete é adicionado ao valor do produto e o total passa a ser considerado um pedido de alto valor, o sistema não informa que o pedido se enquadra nessa condição. Atualmente, aparece apenas a mensagem **"Pedido calculado com sucesso"**.
+
